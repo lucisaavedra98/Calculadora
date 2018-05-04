@@ -37,7 +37,7 @@
                         */
 
                         
-                                    protected int local_return ;
+                                    protected double local_return ;
                                 
                            /*  This tracker boolean wil be used to detect whether the user called the set method
                           *   for this attribute. It will be used to determine whether to include this field
@@ -48,9 +48,9 @@
 
                            /**
                            * Auto generated getter method
-                           * @return int
+                           * @return double
                            */
-                           public  int get_return(){
+                           public  double get_return(){
                                return local_return;
                            }
 
@@ -60,11 +60,11 @@
                                * Auto generated setter method
                                * @param param _return
                                */
-                               public void set_return(int param){
+                               public void set_return(double param){
                             
                                        // setting primitive attribute tracker to true
                                        
-                                               if (param==java.lang.Integer.MIN_VALUE) {
+                                               if (java.lang.Double.isNaN(param)) {
                                            local_returnTracker = false;
                                               
                                        } else {
@@ -193,7 +193,7 @@
                                         xmlWriter.writeStartElement("return");
                                     }
                                 
-                                               if (local_return==java.lang.Integer.MIN_VALUE) {
+                                               if (java.lang.Double.isNaN(local_return)) {
                                            
                                                          throw new org.apache.axis2.databinding.ADBException("return cannot be null!!");
                                                       
@@ -454,7 +454,7 @@
                                     java.lang.String content = reader.getElementText();
                                     
                                               object.set_return(
-                                                    org.apache.axis2.databinding.utils.ConverterUtil.convertToInt(content));
+                                                    org.apache.axis2.databinding.utils.ConverterUtil.convertToDouble(content));
                                               
                                         reader.next();
                                     
@@ -462,7 +462,7 @@
                                 
                                     else {
                                         
-                                               object.set_return(java.lang.Integer.MIN_VALUE);
+                                               object.set_return(java.lang.Double.NaN);
                                            
                                     }
                                   

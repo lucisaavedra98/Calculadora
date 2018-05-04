@@ -45,6 +45,54 @@
 
         
            /**
+            * auto generated Axis2 call back method for resta method
+            * override this method for handling normal response from resta operation
+            */
+           public void receiveResultresta(
+                    es.aytos.main.client.CalculadoraStub.RestaResponse result
+                        ) {
+           }
+
+          /**
+           * auto generated Axis2 Error handler
+           * override this method for handling error response from resta operation
+           */
+            public void receiveErrorresta(java.lang.Exception e) {
+            }
+                
+           /**
+            * auto generated Axis2 call back method for dividir method
+            * override this method for handling normal response from dividir operation
+            */
+           public void receiveResultdividir(
+                    es.aytos.main.client.CalculadoraStub.DividirResponse result
+                        ) {
+           }
+
+          /**
+           * auto generated Axis2 Error handler
+           * override this method for handling error response from dividir operation
+           */
+            public void receiveErrordividir(java.lang.Exception e) {
+            }
+                
+           /**
+            * auto generated Axis2 call back method for multiplicar method
+            * override this method for handling normal response from multiplicar operation
+            */
+           public void receiveResultmultiplicar(
+                    es.aytos.main.client.CalculadoraStub.MultiplicarResponse result
+                        ) {
+           }
+
+          /**
+           * auto generated Axis2 Error handler
+           * override this method for handling error response from multiplicar operation
+           */
+            public void receiveErrormultiplicar(java.lang.Exception e) {
+            }
+                
+           /**
             * auto generated Axis2 call back method for sumar method
             * override this method for handling normal response from sumar operation
             */

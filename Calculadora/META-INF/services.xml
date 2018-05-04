@@ -9,6 +9,18 @@
         <parameter name="ServiceClass">es.aytos.main.server.CalculadoraSkeleton</parameter>
         <parameter name="useOriginalwsdl">true</parameter>
         <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="resta" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://main.aytos.es">
+            <actionMapping>urn:resta</actionMapping>
+            <outputActionMapping>urn:restaResponse</outputActionMapping>
+        </operation>
+        <operation name="dividir" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://main.aytos.es">
+            <actionMapping>urn:dividir</actionMapping>
+            <outputActionMapping>urn:dividirResponse</outputActionMapping>
+        </operation>
+        <operation name="multiplicar" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://main.aytos.es">
+            <actionMapping>urn:multiplicar</actionMapping>
+            <outputActionMapping>urn:multiplicarResponse</outputActionMapping>
+        </operation>
         <operation name="sumar" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://main.aytos.es">
             <actionMapping>urn:sumar</actionMapping>
             <outputActionMapping>urn:sumarResponse</outputActionMapping>

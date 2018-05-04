@@ -15,6 +15,42 @@ public class CalculadoraSkeleton {
 	/**
 	 * Auto generated method signature
 	 * 
+	 * @param resta
+	 */
+
+	public es.aytos.main.RestaResponse resta(es.aytos.main.Resta resta) {
+		es.aytos.main.RestaResponse response = new es.aytos.main.RestaResponse();
+		response.set_return(resta.getArgs0() - resta.getArgs1());
+		return response;
+	}
+
+	/**
+	 * Auto generated method signature
+	 * 
+	 * @param dividir
+	 */
+
+	public es.aytos.main.DividirResponse dividir(es.aytos.main.Dividir dividir) {
+		es.aytos.main.DividirResponse response = new es.aytos.main.DividirResponse();
+		response.set_return(dividir.getArgs0() / dividir.getArgs1());
+		return response;
+	}
+
+	/**
+	 * Auto generated method signature
+	 * 
+	 * @param multiplicar
+	 */
+
+	public es.aytos.main.MultiplicarResponse multiplicar(es.aytos.main.Multiplicar multiplicar) {
+		es.aytos.main.MultiplicarResponse response = new es.aytos.main.MultiplicarResponse();
+		response.set_return(multiplicar.getArgs0() * multiplicar.getArgs1());
+		return response;
+	}
+
+	/**
+	 * Auto generated method signature
+	 * 
 	 * @param sumar
 	 */
 

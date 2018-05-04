@@ -36,22 +36,76 @@
 
         
 
+            if("resta".equals(methodName)){
+                
+                es.aytos.main.RestaResponse restaResponse17 = null;
+	                        es.aytos.main.Resta wrappedParam =
+                                                             (es.aytos.main.Resta)fromOM(
+                                    msgContext.getEnvelope().getBody().getFirstElement(),
+                                    es.aytos.main.Resta.class,
+                                    getEnvelopeNamespaces(msgContext.getEnvelope()));
+                                                
+                                               restaResponse17 =
+                                                   
+                                                   
+                                                         skel.resta(wrappedParam)
+                                                    ;
+                                            
+                                        envelope = toEnvelope(getSOAPFactory(msgContext), restaResponse17, false);
+                                    } else 
+
+            if("dividir".equals(methodName)){
+                
+                es.aytos.main.DividirResponse dividirResponse19 = null;
+	                        es.aytos.main.Dividir wrappedParam =
+                                                             (es.aytos.main.Dividir)fromOM(
+                                    msgContext.getEnvelope().getBody().getFirstElement(),
+                                    es.aytos.main.Dividir.class,
+                                    getEnvelopeNamespaces(msgContext.getEnvelope()));
+                                                
+                                               dividirResponse19 =
+                                                   
+                                                   
+                                                         skel.dividir(wrappedParam)
+                                                    ;
+                                            
+                                        envelope = toEnvelope(getSOAPFactory(msgContext), dividirResponse19, false);
+                                    } else 
+
+            if("multiplicar".equals(methodName)){
+                
+                es.aytos.main.MultiplicarResponse multiplicarResponse21 = null;
+	                        es.aytos.main.Multiplicar wrappedParam =
+                                                             (es.aytos.main.Multiplicar)fromOM(
+                                    msgContext.getEnvelope().getBody().getFirstElement(),
+                                    es.aytos.main.Multiplicar.class,
+                                    getEnvelopeNamespaces(msgContext.getEnvelope()));
+                                                
+                                               multiplicarResponse21 =
+                                                   
+                                                   
+                                                         skel.multiplicar(wrappedParam)
+                                                    ;
+                                            
+                                        envelope = toEnvelope(getSOAPFactory(msgContext), multiplicarResponse21, false);
+                                    } else 
+
             if("sumar".equals(methodName)){
                 
-                es.aytos.main.SumarResponse sumarResponse5 = null;
+                es.aytos.main.SumarResponse sumarResponse23 = null;
 	                        es.aytos.main.Sumar wrappedParam =
                                                              (es.aytos.main.Sumar)fromOM(
                                     msgContext.getEnvelope().getBody().getFirstElement(),
                                     es.aytos.main.Sumar.class,
                                     getEnvelopeNamespaces(msgContext.getEnvelope()));
                                                 
-                                               sumarResponse5 =
+                                               sumarResponse23 =
                                                    
                                                    
                                                          skel.sumar(wrappedParam)
                                                     ;
                                             
-                                        envelope = toEnvelope(getSOAPFactory(msgContext), sumarResponse5, false);
+                                        envelope = toEnvelope(getSOAPFactory(msgContext), sumarResponse23, false);
                                     
             } else {
               throw new java.lang.RuntimeException("method not found");
@@ -67,6 +121,90 @@
         }
         
         //
+            private  org.apache.axiom.om.OMElement  toOM(es.aytos.main.Resta param, boolean optimizeContent)
+            throws org.apache.axis2.AxisFault {
+
+            
+                        try{
+                             return param.getOMElement(es.aytos.main.Resta.MY_QNAME,
+                                          org.apache.axiom.om.OMAbstractFactory.getOMFactory());
+                        } catch(org.apache.axis2.databinding.ADBException e){
+                            throw org.apache.axis2.AxisFault.makeFault(e);
+                        }
+                    
+
+            }
+        
+            private  org.apache.axiom.om.OMElement  toOM(es.aytos.main.RestaResponse param, boolean optimizeContent)
+            throws org.apache.axis2.AxisFault {
+
+            
+                        try{
+                             return param.getOMElement(es.aytos.main.RestaResponse.MY_QNAME,
+                                          org.apache.axiom.om.OMAbstractFactory.getOMFactory());
+                        } catch(org.apache.axis2.databinding.ADBException e){
+                            throw org.apache.axis2.AxisFault.makeFault(e);
+                        }
+                    
+
+            }
+        
+            private  org.apache.axiom.om.OMElement  toOM(es.aytos.main.Dividir param, boolean optimizeContent)
+            throws org.apache.axis2.AxisFault {
+
+            
+                        try{
+                             return param.getOMElement(es.aytos.main.Dividir.MY_QNAME,
+                                          org.apache.axiom.om.OMAbstractFactory.getOMFactory());
+                        } catch(org.apache.axis2.databinding.ADBException e){
+                            throw org.apache.axis2.AxisFault.makeFault(e);
+                        }
+                    
+
+            }
+        
+            private  org.apache.axiom.om.OMElement  toOM(es.aytos.main.DividirResponse param, boolean optimizeContent)
+            throws org.apache.axis2.AxisFault {
+
+            
+                        try{
+                             return param.getOMElement(es.aytos.main.DividirResponse.MY_QNAME,
+                                          org.apache.axiom.om.OMAbstractFactory.getOMFactory());
+                        } catch(org.apache.axis2.databinding.ADBException e){
+                            throw org.apache.axis2.AxisFault.makeFault(e);
+                        }
+                    
+
+            }
+        
+            private  org.apache.axiom.om.OMElement  toOM(es.aytos.main.Multiplicar param, boolean optimizeContent)
+            throws org.apache.axis2.AxisFault {
+
+            
+                        try{
+                             return param.getOMElement(es.aytos.main.Multiplicar.MY_QNAME,
+                                          org.apache.axiom.om.OMAbstractFactory.getOMFactory());
+                        } catch(org.apache.axis2.databinding.ADBException e){
+                            throw org.apache.axis2.AxisFault.makeFault(e);
+                        }
+                    
+
+            }
+        
+            private  org.apache.axiom.om.OMElement  toOM(es.aytos.main.MultiplicarResponse param, boolean optimizeContent)
+            throws org.apache.axis2.AxisFault {
+
+            
+                        try{
+                             return param.getOMElement(es.aytos.main.MultiplicarResponse.MY_QNAME,
+                                          org.apache.axiom.om.OMAbstractFactory.getOMFactory());
+                        } catch(org.apache.axis2.databinding.ADBException e){
+                            throw org.apache.axis2.AxisFault.makeFault(e);
+                        }
+                    
+
+            }
+        
             private  org.apache.axiom.om.OMElement  toOM(es.aytos.main.Sumar param, boolean optimizeContent)
             throws org.apache.axis2.AxisFault {
 
@@ -95,6 +233,63 @@
 
             }
         
+                    private  org.apache.axiom.soap.SOAPEnvelope toEnvelope(org.apache.axiom.soap.SOAPFactory factory, es.aytos.main.RestaResponse param, boolean optimizeContent)
+                        throws org.apache.axis2.AxisFault{
+                      try{
+                          org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
+                           
+                                    emptyEnvelope.getBody().addChild(param.getOMElement(es.aytos.main.RestaResponse.MY_QNAME,factory));
+                                
+
+                         return emptyEnvelope;
+                    } catch(org.apache.axis2.databinding.ADBException e){
+                        throw org.apache.axis2.AxisFault.makeFault(e);
+                    }
+                    }
+                    
+                         private es.aytos.main.RestaResponse wrapresta(){
+                                es.aytos.main.RestaResponse wrappedElement = new es.aytos.main.RestaResponse();
+                                return wrappedElement;
+                         }
+                    
+                    private  org.apache.axiom.soap.SOAPEnvelope toEnvelope(org.apache.axiom.soap.SOAPFactory factory, es.aytos.main.DividirResponse param, boolean optimizeContent)
+                        throws org.apache.axis2.AxisFault{
+                      try{
+                          org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
+                           
+                                    emptyEnvelope.getBody().addChild(param.getOMElement(es.aytos.main.DividirResponse.MY_QNAME,factory));
+                                
+
+                         return emptyEnvelope;
+                    } catch(org.apache.axis2.databinding.ADBException e){
+                        throw org.apache.axis2.AxisFault.makeFault(e);
+                    }
+                    }
+                    
+                         private es.aytos.main.DividirResponse wrapdividir(){
+                                es.aytos.main.DividirResponse wrappedElement = new es.aytos.main.DividirResponse();
+                                return wrappedElement;
+                         }
+                    
+                    private  org.apache.axiom.soap.SOAPEnvelope toEnvelope(org.apache.axiom.soap.SOAPFactory factory, es.aytos.main.MultiplicarResponse param, boolean optimizeContent)
+                        throws org.apache.axis2.AxisFault{
+                      try{
+                          org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
+                           
+                                    emptyEnvelope.getBody().addChild(param.getOMElement(es.aytos.main.MultiplicarResponse.MY_QNAME,factory));
+                                
+
+                         return emptyEnvelope;
+                    } catch(org.apache.axis2.databinding.ADBException e){
+                        throw org.apache.axis2.AxisFault.makeFault(e);
+                    }
+                    }
+                    
+                         private es.aytos.main.MultiplicarResponse wrapmultiplicar(){
+                                es.aytos.main.MultiplicarResponse wrappedElement = new es.aytos.main.MultiplicarResponse();
+                                return wrappedElement;
+                         }
+                    
                     private  org.apache.axiom.soap.SOAPEnvelope toEnvelope(org.apache.axiom.soap.SOAPFactory factory, es.aytos.main.SumarResponse param, boolean optimizeContent)
                         throws org.apache.axis2.AxisFault{
                       try{
@@ -131,6 +326,48 @@
 
         try {
         
+                if (es.aytos.main.Resta.class.equals(type)){
+                
+                           return es.aytos.main.Resta.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                    
+
+                }
+           
+                if (es.aytos.main.RestaResponse.class.equals(type)){
+                
+                           return es.aytos.main.RestaResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                    
+
+                }
+           
+                if (es.aytos.main.Dividir.class.equals(type)){
+                
+                           return es.aytos.main.Dividir.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                    
+
+                }
+           
+                if (es.aytos.main.DividirResponse.class.equals(type)){
+                
+                           return es.aytos.main.DividirResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                    
+
+                }
+           
+                if (es.aytos.main.Multiplicar.class.equals(type)){
+                
+                           return es.aytos.main.Multiplicar.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                    
+
+                }
+           
+                if (es.aytos.main.MultiplicarResponse.class.equals(type)){
+                
+                           return es.aytos.main.MultiplicarResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                    
+
+                }
+           
                 if (es.aytos.main.Sumar.class.equals(type)){
                 
                            return es.aytos.main.Sumar.Factory.parse(param.getXMLStreamReaderWithoutCaching());
